@@ -1,1 +1,1 @@
-# vapan-next-js
+# データ設計

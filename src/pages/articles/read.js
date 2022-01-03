@@ -1,9 +1,23 @@
 import { Article, Header } from '../../components'
 
+const characters = [
+  {
+    name: 'Lize Helesta',
+    headshotUrl: 'https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Rize_Heruesta_hp.png',
+    YouTubeUrl: 'https://www.youtube.com/channel/UCZ1xuCK1kNmn5RzPYIZop3w',
+    color: '#42FFFF',
+  },
+  {
+    name: 'Ange Katrina',
+    headshotUrl: 'https://liver-icons.s3.ap-northeast-1.amazonaws.com/400x400/Ange_Katrina_210830.png',
+    YouTubeUrl: 'https://www.youtube.com/channel/UCHVXbQzkl3rDfsXWo8xi2qw',
+    color: '#C83C35',
+  },
+]
+
 const lines = [
   {
-    displayName: 'Lize',
-    icon: 'https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Rize_Heruesta_hp.png',
+    name: 'Lize Helesta',
     nihongo: [
       'じゃあ、これにて',
       '一週間',
@@ -42,8 +56,7 @@ const lines = [
     },
   },
   {
-    displayName: 'Lize',
-    icon: 'https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Rize_Heruesta_hp.png',
+    name: 'Lize Helesta',
     nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
     furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
     freeEN: "Well, it's time to say goodbye.",
@@ -53,8 +66,7 @@ const lines = [
     },
   },
   {
-    displayName: 'Ange',
-    icon: 'https://liver-icons.s3.ap-northeast-1.amazonaws.com/400x400/Ange_Katrina_210830.png',
+    name: 'Ange Katrina',
     nihongo: ['終', 'わりかぁ…やばぁ…'],
     furigana: ['お', ''],
     freeEN: "It's ending... Ah...",
@@ -64,16 +76,14 @@ const lines = [
     },
   },
   {
-    displayName: 'Ange',
-    icon: 'https://liver-icons.s3.ap-northeast-1.amazonaws.com/400x400/Ange_Katrina_210830.png',
+    name: 'Ange Katrina',
     nihongo: ['もうリゼアンウィーク', '終', 'わりだって…'],
     furigana: ['', 'お', ''],
     freeEN: 'LizeAn Week is already ending...',
     details: {},
   },
   {
-    displayName: 'Lize',
-    icon: 'https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Rize_Heruesta_hp.png',
+    name: 'Lize Helesta',
     nihongo: ['終', 'わりだってさ…'],
     furigana: ['お', ''],
     freeEN: "It's ending...",
@@ -83,8 +93,7 @@ const lines = [
     },
   },
   {
-    displayName: 'Lize',
-    icon: 'https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Rize_Heruesta_hp.png',
+    name: 'Lize Helesta',
     nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
     furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
     freeEN: "Well, it's time to say goodbye.",
@@ -94,8 +103,7 @@ const lines = [
     },
   },
   {
-    displayName: 'Ange',
-    icon: 'https://liver-icons.s3.ap-northeast-1.amazonaws.com/400x400/Ange_Katrina_210830.png',
+    name: 'Ange Katrina',
     nihongo: ['終', 'わりかぁ…やばぁ…'],
     furigana: ['お', ''],
     freeEN: "It's ending... Ah...",
@@ -105,16 +113,14 @@ const lines = [
     },
   },
   {
-    displayName: 'Ange',
-    icon: 'https://liver-icons.s3.ap-northeast-1.amazonaws.com/400x400/Ange_Katrina_210830.png',
+    name: 'Ange Katrina',
     nihongo: ['もうリゼアンウィーク', '終', 'わりだって…'],
     furigana: ['', 'お', ''],
     freeEN: 'LizeAn Week is already ending...',
     details: {},
   },
   {
-    displayName: 'Lize',
-    icon: 'https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Rize_Heruesta_hp.png',
+    name: 'Lize Helesta',
     nihongo: ['終', 'わりだってさ…'],
     furigana: ['お', ''],
     freeEN: "It's ending...",
@@ -124,8 +130,7 @@ const lines = [
     },
   },
   {
-    displayName: 'Lize',
-    icon: 'https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Rize_Heruesta_hp.png',
+    name: 'Lize Helesta',
     nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
     furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
     freeEN: "Well, it's time to say goodbye.",
@@ -135,8 +140,7 @@ const lines = [
     },
   },
   {
-    displayName: 'Ange',
-    icon: 'https://liver-icons.s3.ap-northeast-1.amazonaws.com/400x400/Ange_Katrina_210830.png',
+    name: 'Ange Katrina',
     nihongo: ['終', 'わりかぁ…やばぁ…'],
     furigana: ['お', ''],
     freeEN: "It's ending... Ah...",
@@ -146,16 +150,14 @@ const lines = [
     },
   },
   {
-    displayName: 'Ange',
-    icon: 'https://liver-icons.s3.ap-northeast-1.amazonaws.com/400x400/Ange_Katrina_210830.png',
+    name: 'Ange Katrina',
     nihongo: ['もうリゼアンウィーク', '終', 'わりだって…'],
     furigana: ['', 'お', ''],
     freeEN: 'LizeAn Week is already ending...',
     details: {},
   },
   {
-    displayName: 'Lize',
-    icon: 'https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Rize_Heruesta_hp.png',
+    name: 'Lize Helesta',
     nihongo: ['終', 'わりだってさ…'],
     furigana: ['お', ''],
     freeEN: "It's ending...",
@@ -171,9 +173,16 @@ const article = {
   author: 'Enji',
   createDate: '2021-12-31',
   updateDate: '2022-01-11',
-  description:
+  firstText:
     '25 years later, she still regretted that specific moment. Facing his greatest fear, he ate his first marshmallow. The river stole the gods. Erin accidentally created a new universe.',
-  lines: lines,
+  dialogue: {
+    streamUrl: 'https://youtu.be/uvs93XVfK4U',
+    clipUrl: 'https://youtu.be/_7nfBKrzTZ4',
+    characters: characters,
+    lines: lines,
+  },
+  lastText:
+    '25 years later, she still regretted that specific moment. Facing his greatest fear, he ate his first marshmallow. The river stole the gods. Erin accidentally created a new universe.',
 }
 
 function Read() {
@@ -186,8 +195,9 @@ function Read() {
           title={article.title}
           createDate={article.createDate}
           updateDate={article.updateDate}
-          description={article.description}
-          lines={article.lines}
+          firstText={article.firstText}
+          dialogue={article.dialogue}
+          lastText={article.lastText}
         />
       </main>
     </div>
