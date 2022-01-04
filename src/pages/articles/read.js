@@ -263,7 +263,7 @@ function Read() {
     <div className="bg-gray-100">
       <Header />
 
-      <main className="flex">
+      <main className="flex justify-center">
         <Article title={title} author={author} createDate={createDate} updateDate={updateDate} contents={contents} />
       </main>
     </div>

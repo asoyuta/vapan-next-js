@@ -5,13 +5,13 @@ function Dialogue({ streamUrl, streamDate, clipUrl, characters, lines }) {
   var previousPersonName = 'DEFAULT'
 
   return (
-    <div className="mb-5">
+    <div className="lg:bg-slate-900 lg:px-14 lg:py-10 lg:mx-10 lg:rounded-3xl mb-5">
       {/* Display */}
       <div className="">
         {/* Option / Character Details / Stream Details */}
-        <div className=" bg-sky-900 h-12 sm:h-16 top-0 z-50"></div>
+        <div className=" bg-sky-900 h-12 sm:h-16 top-0 z-50 lg:rounded-t-xl"></div>
         {/* Chat */}
-        <div className="bg-sky-400 h-[calc(105vh-96px)] overflow-scroll scrollbar-hide px-3 sm:px-6">
+        <div className="bg-sky-400 h-[calc(103vh-96px)] sm:h-[calc(103vh-128px)] lg:h-[70vh] overflow-scroll scrollbar-hide px-3 sm:px-6">
           <div className="flex items-center mt-5">
             <p className="text-base sm:text-lg inline-block mx-auto text-center bg-blue-500 text-white p-2 sm:px-4 rounded-md">
               {streamDate}
@@ -55,7 +55,7 @@ function Dialogue({ streamUrl, streamDate, clipUrl, characters, lines }) {
           </div>
         </div>
         {/* Decolation */}
-        <div className="bg-slate-600 h-12 sm:h-16 top-0 z-50"></div>
+        <div className="bg-slate-600 h-12 sm:h-16 top-0 z-50 lg:rounded-b-xl"></div>
       </div>
     </div>
   )
