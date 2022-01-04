@@ -221,6 +221,35 @@ const lines = [
   },
 ]
 
+const contents = [
+  {
+    title: 'part 1',
+    text: '',
+    dialogue: {},
+  },
+  {
+    title: '',
+    text: '25 years later, she still regretted that specific moment. Facing his greatest fear, he ate his first marshmallow. The river stole the gods. Erin accidentally created a new universe.',
+    dialogue: {},
+  },
+  {
+    title: '',
+    text: '',
+    dialogue: {
+      streamUrl: 'https://youtu.be/uvs93XVfK4U',
+      streamDate: '2019-07-08',
+      clipUrl: 'https://youtu.be/_7nfBKrzTZ4',
+      characters: characters,
+      lines: lines,
+    },
+  },
+  {
+    title: '',
+    text: "This isn't a book, it's a case to hide illicit substances. When one considers the issue from a different perspective, the answer seems to change. I'm absolutely sure. We need a car big enough for the whole family. The giraffe licked the tree and spat at the gorilla. You look really sharp today. Problem solving is important. There is a big park near my school. Please, take pity on me! Are you opening the door? How was I supposed to know he hated salami?",
+    dialogue: {},
+  },
+]
+
 const article = {
   title: 'End of LizeAn Week',
   author: 'Enji',
@@ -236,22 +265,25 @@ const article = {
     lines: lines,
   },
   lastText:
-    '25 years later, she still regretted that specific moment. Facing his greatest fear, he ate his first marshmallow. The river stole the gods. Erin accidentally created a new universe.',
+    "This isn't a book, it's a case to hide illicit substances. When one considers the issue from a different perspective, the answer seems to change. I'm absolutely sure. We need a car big enough for the whole family. The giraffe licked the tree and spat at the gorilla. You look really sharp today. Problem solving is important. There is a big park near my school. Please, take pity on me! Are you opening the door? How was I supposed to know he hated salami?",
 }
 
 function Read() {
+  const { title, author, createDate, updateDate, firstText, dialogue, lastText } = article
+
   return (
     <div className="bg-gray-100">
       <Header />
 
       <main className="flex">
         <Article
-          title={article.title}
-          createDate={article.createDate}
-          updateDate={article.updateDate}
-          firstText={article.firstText}
-          dialogue={article.dialogue}
-          lastText={article.lastText}
+          title={title}
+          author={author}
+          createDate={createDate}
+          updateDate={updateDate}
+          firstText={firstText}
+          dialogue={dialogue}
+          lastText={lastText}
         />
       </main>
     </div>

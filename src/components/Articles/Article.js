@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { GrayLine, Line, Title } from '..'
 
-function Article({ title, createDate, updateDate, firstText, dialogue, lastText }) {
+function Article({ title, author, createDate, updateDate, firstText, dialogue, lastText }) {
   const { streamUrl, streamDate, clipUrl, characters, lines } = dialogue
   const firstPersonName = 'Lize Helesta'
   var previousPersonName = 'DEFAULT'
@@ -9,7 +9,7 @@ function Article({ title, createDate, updateDate, firstText, dialogue, lastText 
   return (
     <div className="">
       {/* Title */}
-      <Title title={title} createDate={createDate} updateDate={updateDate} />
+      <Title title={title} author={author} createDate={createDate} />
 
       <div className="mx-3 mb-5">
         <p className="text-gray-700 text-base">{firstText}</p>
