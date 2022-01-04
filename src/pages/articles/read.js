@@ -221,32 +221,30 @@ const lines = [
   },
 ]
 
+const dialogue = {
+  streamUrl: 'https://youtu.be/uvs93XVfK4U',
+  streamDate: '2019-07-08',
+  clipUrl: 'https://youtu.be/_7nfBKrzTZ4',
+  characters: characters,
+  lines: lines,
+}
+
 const contents = [
   {
-    title: 'part 1',
-    text: '',
-    dialogue: {},
+    type: 'sectionTitle',
+    sectionTitle: '1. This is Small Title!'
   },
   {
-    title: '',
+    type: 'text',
     text: '25 years later, she still regretted that specific moment. Facing his greatest fear, he ate his first marshmallow. The river stole the gods. Erin accidentally created a new universe.',
-    dialogue: {},
   },
   {
-    title: '',
-    text: '',
-    dialogue: {
-      streamUrl: 'https://youtu.be/uvs93XVfK4U',
-      streamDate: '2019-07-08',
-      clipUrl: 'https://youtu.be/_7nfBKrzTZ4',
-      characters: characters,
-      lines: lines,
-    },
+    type: 'dialogue',
+    dialogue: dialogue,
   },
   {
-    title: '',
+    type: 'text',
     text: "This isn't a book, it's a case to hide illicit substances. When one considers the issue from a different perspective, the answer seems to change. I'm absolutely sure. We need a car big enough for the whole family. The giraffe licked the tree and spat at the gorilla. You look really sharp today. Problem solving is important. There is a big park near my school. Please, take pity on me! Are you opening the door? How was I supposed to know he hated salami?",
-    dialogue: {},
   },
 ]
 
@@ -255,36 +253,18 @@ const article = {
   author: 'Enji',
   createDate: '2021-12-31',
   updateDate: '2022-01-11',
-  firstText:
-    '25 years later, she still regretted that specific moment. Facing his greatest fear, he ate his first marshmallow. The river stole the gods. Erin accidentally created a new universe.',
-  dialogue: {
-    streamUrl: 'https://youtu.be/uvs93XVfK4U',
-    streamDate: '2019-07-08',
-    clipUrl: 'https://youtu.be/_7nfBKrzTZ4',
-    characters: characters,
-    lines: lines,
-  },
-  lastText:
-    "This isn't a book, it's a case to hide illicit substances. When one considers the issue from a different perspective, the answer seems to change. I'm absolutely sure. We need a car big enough for the whole family. The giraffe licked the tree and spat at the gorilla. You look really sharp today. Problem solving is important. There is a big park near my school. Please, take pity on me! Are you opening the door? How was I supposed to know he hated salami?",
+  contents: contents,
 }
 
 function Read() {
-  const { title, author, createDate, updateDate, firstText, dialogue, lastText } = article
+  const { title, author, createDate, updateDate, contents } = article
 
   return (
     <div className="bg-gray-100">
       <Header />
 
       <main className="flex">
-        <Article
-          title={title}
-          author={author}
-          createDate={createDate}
-          updateDate={updateDate}
-          firstText={firstText}
-          dialogue={dialogue}
-          lastText={lastText}
-        />
+        <Article title={title} author={author} createDate={createDate} updateDate={updateDate} contents={contents} />
       </main>
     </div>
   )

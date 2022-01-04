@@ -6,6 +6,7 @@ export { default as Header } from './Header'
 
 // Articles
 export { default as Article } from './Articles/Article'
+export { default as Dialogue } from './Articles/Dialogue'
 export { default as GrayLine } from './Articles/GrayLine'
 export { default as Line } from './Articles/Line'
 export { default as Title } from './Articles/Title'
