@@ -1,4 +1,5 @@
 import { Article, Header } from '../../components'
+import noIconUrl from '../../public/img/blank-profile.png'
 
 const characters = [
   {
@@ -13,9 +14,61 @@ const characters = [
     YouTubeUrl: 'https://www.youtube.com/channel/UCHVXbQzkl3rDfsXWo8xi2qw',
     color: '#C83C35',
   },
+  {
+    name: 'NO NAME',
+    headshotUrl: noIconUrl,
+    YouTubeUrl: '',
+    color: '',
+  },
+  {
+    name: '',
+    headshotUrl: '',
+    YouTubeUrl: '',
+    color: '',
+  },
 ]
 
 const lines = [
+  {
+    name: '',
+    nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
+    furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
+    freeEN: "Well, it's time to say goodbye.",
+    details: {
+      literalEN: "Well then, this time, it's time to say goodbye, really.",
+      description: 'She pronounce ほんと but ほんとう is correct.',
+    },
+  },
+  {
+    name: 'NO NAME',
+    nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
+    furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
+    freeEN: "Well, it's time to say goodbye.",
+    details: {
+      literalEN: "Well then, this time, it's time to say goodbye, really.",
+      description: 'She pronounce ほんと but ほんとう is correct.',
+    },
+  },
+  {
+    name: '',
+    nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
+    furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
+    freeEN: "Well, it's time to say goodbye.",
+    details: {
+      literalEN: "Well then, this time, it's time to say goodbye, really.",
+      description: 'She pronounce ほんと but ほんとう is correct.',
+    },
+  },
+  {
+    name: 'NO NAME',
+    nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
+    furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
+    freeEN: "Well, it's time to say goodbye.",
+    details: {
+      literalEN: "Well then, this time, it's time to say goodbye, really.",
+      description: 'She pronounce ほんと but ほんとう is correct.',
+    },
+  },
   {
     name: 'Lize Helesta',
     nihongo: [
@@ -42,7 +95,7 @@ const lines = [
       '',
       'しがつ',
       'なのか',
-      '、',
+      '',
       'ひづけ',
       'か',
       '',
@@ -177,6 +230,7 @@ const article = {
     '25 years later, she still regretted that specific moment. Facing his greatest fear, he ate his first marshmallow. The river stole the gods. Erin accidentally created a new universe.',
   dialogue: {
     streamUrl: 'https://youtu.be/uvs93XVfK4U',
+    streamDate: '2019-07-08',
     clipUrl: 'https://youtu.be/_7nfBKrzTZ4',
     characters: characters,
     lines: lines,
