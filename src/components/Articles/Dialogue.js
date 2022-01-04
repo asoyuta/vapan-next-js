@@ -7,13 +7,13 @@ function Dialogue({ streamUrl, streamDate, clipUrl, characters, lines }) {
   return (
     <div className="mb-5">
       {/* Display */}
-      <div className="max-w-3xl">
+      <div className="">
         {/* Option / Character Details / Stream Details */}
-        <div className=" bg-sky-900 h-12 top-0 z-50"></div>
+        <div className=" bg-sky-900 h-12 sm:h-16 top-0 z-50"></div>
         {/* Chat */}
-        <div className="bg-sky-400 h-[calc(105vh-96px)] overflow-scroll scrollbar-hide px-2">
+        <div className="bg-sky-400 h-[calc(105vh-96px)] overflow-scroll scrollbar-hide px-3 sm:px-6">
           <div className="flex items-center mt-5">
-            <p className="text-base inline-block mx-auto text-center bg-blue-500 text-white p-2 rounded-md">
+            <p className="text-base sm:text-lg inline-block mx-auto text-center bg-blue-500 text-white p-2 sm:px-4 rounded-md">
               {streamDate}
             </p>
           </div>
@@ -49,13 +49,13 @@ function Dialogue({ streamUrl, streamDate, clipUrl, characters, lines }) {
           })}
 
           <div className="flex items-center my-5">
-            <p className=" text-sm inline-block mx-auto text-center bg-blue-400 text-white p-2 rounded-md">
+            <p className="text-sm sm:text-base inline-block mx-auto text-center bg-blue-400 text-white p-2 sm:px-4 rounded-md">
               Conversation ends here...
             </p>
           </div>
         </div>
         {/* Decolation */}
-        <div className="bg-slate-600 h-12 top-0 z-50"></div>
+        <div className="bg-slate-600 h-12 sm:h-16 top-0 z-50"></div>
       </div>
     </div>
   )

@@ -232,7 +232,7 @@ const dialogue = {
 const contents = [
   {
     type: 'sectionTitle',
-    sectionTitle: '1. This is Small Title!'
+    sectionTitle: '1. This is good Small Title!'
   },
   {
     type: 'text',
@@ -250,7 +250,7 @@ const contents = [
 
 const article = {
   title: 'End of LizeAn Week',
-  author: 'Enji',
+  author: 'English Nijisanji',
   createDate: '2021-12-31',
   updateDate: '2022-01-11',
   contents: contents,

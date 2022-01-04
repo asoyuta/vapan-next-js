@@ -4,7 +4,7 @@ function Furigana({ nihongo, furigana, furiOn }) {
   return (
     <>
       {furiOn ? (
-        <ruby className="text-base">
+        <ruby className="text-base sm:text-lg">
           {nihongo.map((_, i) => (
             <React.Fragment key={i}>
               {nihongo[i]} <rt>{furigana[i]}</rt>
