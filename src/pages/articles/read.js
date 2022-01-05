@@ -14,18 +14,6 @@ const characters = [
     YouTubeUrl: 'https://www.youtube.com/channel/UCHVXbQzkl3rDfsXWo8xi2qw',
     color: '#C83C35',
   },
-  {
-    name: 'NO NAME',
-    headshotUrl: noIconUrl,
-    YouTubeUrl: '',
-    color: '',
-  },
-  {
-    name: '',
-    headshotUrl: '',
-    YouTubeUrl: '',
-    color: '',
-  },
 ]
 
 const lines = [
@@ -34,40 +22,14 @@ const lines = [
     nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
     furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
     freeEN: "Well, it's time to say goodbye.",
-    details: {
-      literalEN: "Well then, this time, it's time to say goodbye, really.",
-      description: 'She pronounce ほんと but ほんとう is correct.',
-    },
-  },
-  {
-    name: 'NO NAME',
-    nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
-    furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
-    freeEN: "Well, it's time to say goodbye.",
-    details: {
-      literalEN: "Well then, this time, it's time to say goodbye, really.",
-      description: 'She pronounce ほんと but ほんとう is correct.',
-    },
+    description: 'She pronounce ほんと but ほんとう is correct.',
   },
   {
     name: '',
     nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
     furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
     freeEN: "Well, it's time to say goodbye.",
-    details: {
-      literalEN: "Well then, this time, it's time to say goodbye, really.",
-      description: 'She pronounce ほんと but ほんとう is correct.',
-    },
-  },
-  {
-    name: 'NO NAME',
-    nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
-    furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
-    freeEN: "Well, it's time to say goodbye.",
-    details: {
-      literalEN: "Well then, this time, it's time to say goodbye, really.",
-      description: 'She pronounce ほんと but ほんとう is correct.',
-    },
+    description: 'She pronounce ほんと but ほんとう is correct.',
   },
   {
     name: 'Lize Helesta',
@@ -102,122 +64,106 @@ const lines = [
       'ようか',
     ],
     freeEN: 'Then, this whole week, since April 1st, until April 7th, the date has changed, 8th',
-    details: {
-      literalEN: "Well then, this time, it's time to say goodbye, really.",
-      description:
-        'She realized the date has changed after saying 7th, so she said 8th. We can read 一日 as いちにち, 七日 as しちにち or ななにち, 八日 as はちにち. But ついたち, なのか, ようか are more appropriate.',
-    },
+    description:
+      'She realized the date has changed after saying 7th, so she said 8th. We can read 一日 as いちにち, 七日 as しちにち or ななにち, 八日 as はちにち. But ついたち, なのか, ようか are more appropriate.',
+  },
+  {
+    name: '',
+    nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
+    furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
+    freeEN: "Well, it's time to say goodbye.",
+    description: 'She pronounce ほんと but ほんとう is correct.',
   },
   {
     name: 'Lize Helesta',
     nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
     furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
     freeEN: "Well, it's time to say goodbye.",
-    details: {
-      literalEN: "Well then, this time, it's time to say goodbye, really.",
-      description: 'She pronounce ほんと but ほんとう is correct.',
-    },
+    description: 'She pronounce ほんと but ほんとう is correct.',
+  },
+  {
+    name: '',
+    nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
+    furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
+    freeEN: "Well, it's time to say goodbye.",
+    description: 'She pronounce ほんと but ほんとう is correct.',
   },
   {
     name: 'Ange Katrina',
     nihongo: ['終', 'わりかぁ…やばぁ…'],
     furigana: ['お', ''],
     freeEN: "It's ending... Ah...",
-    details: {
-      literalEN: '',
-      description: 'English has no equivalent to やばい.',
-    },
+    description: 'English has no equivalent to やばい.',
   },
   {
     name: 'Ange Katrina',
     nihongo: ['もうリゼアンウィーク', '終', 'わりだって…'],
     furigana: ['', 'お', ''],
     freeEN: 'LizeAn Week is already ending...',
-    details: {},
+    description: '',
   },
   {
     name: 'Lize Helesta',
     nihongo: ['終', 'わりだってさ…'],
     furigana: ['お', ''],
     freeEN: "It's ending...",
-    details: {
-      literalEN: '',
-      description: '',
-    },
+    description: '',
   },
   {
     name: 'Lize Helesta',
     nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
     furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
     freeEN: "Well, it's time to say goodbye.",
-    details: {
-      literalEN: "Well then, this time, it's time to say goodbye, really.",
-      description: 'She pronounce ほんと but ほんとう is correct.',
-    },
+    description: 'She pronounce ほんと but ほんとう is correct.',
   },
   {
     name: 'Ange Katrina',
     nihongo: ['終', 'わりかぁ…やばぁ…'],
     furigana: ['お', ''],
     freeEN: "It's ending... Ah...",
-    details: {
-      literalEN: '',
-      description: 'English has no equivalent to やばい.',
-    },
+    description: 'English has no equivalent to やばい.',
   },
   {
     name: 'Ange Katrina',
     nihongo: ['もうリゼアンウィーク', '終', 'わりだって…'],
     furigana: ['', 'お', ''],
     freeEN: 'LizeAn Week is already ending...',
-    details: {},
+    description: '',
   },
   {
     name: 'Lize Helesta',
     nihongo: ['終', 'わりだってさ…'],
     furigana: ['お', ''],
     freeEN: "It's ending...",
-    details: {
-      literalEN: '',
-      description: '',
-    },
+    description: '',
   },
   {
     name: 'Lize Helesta',
     nihongo: ['じゃあこれで', '今度', 'こそ', '本当', 'にお', '別', 'れだ'],
     furigana: ['', 'こんど', '', 'ほんとう', '', 'わか', ''],
     freeEN: "Well, it's time to say goodbye.",
-    details: {
-      literalEN: "Well then, this time, it's time to say goodbye, really.",
-      description: 'She pronounce ほんと but ほんとう is correct.',
-    },
+    description: 'She pronounce ほんと but ほんとう is correct.',
   },
   {
     name: 'Ange Katrina',
     nihongo: ['終', 'わりかぁ…やばぁ…'],
     furigana: ['お', ''],
     freeEN: "It's ending... Ah...",
-    details: {
-      literalEN: '',
-      description: 'English has no equivalent to やばい.',
-    },
+    description: 'English has no equivalent to やばい.',
   },
   {
     name: 'Ange Katrina',
     nihongo: ['もうリゼアンウィーク', '終', 'わりだって…'],
     furigana: ['', 'お', ''],
     freeEN: 'LizeAn Week is already ending...',
-    details: {},
+    description: '',
   },
   {
     name: 'Lize Helesta',
     nihongo: ['終', 'わりだってさ…'],
     furigana: ['お', ''],
     freeEN: "It's ending...",
-    details: {
-      literalEN: '',
-      description: '',
-    },
+    description: '',
   },
 ]
 
@@ -232,7 +178,7 @@ const dialogue = {
 const contents = [
   {
     type: 'sectionTitle',
-    sectionTitle: '1. This is good Small Title!'
+    sectionTitle: '1. This is good Small Title!',
   },
   {
     type: 'text',
