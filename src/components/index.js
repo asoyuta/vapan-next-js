@@ -10,3 +10,6 @@ export { default as Dialogue } from './Articles/Dialogue'
 export { default as GrayLine } from './Articles/GrayLine'
 export { default as Line } from './Articles/Line'
 export { default as Title } from './Articles/Title'
+
+// UI kit
+export { default as Toggle } from './UIkit/Toggle'
