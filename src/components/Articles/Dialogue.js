@@ -1,5 +1,14 @@
 import { GrayLine, Line, Toggle } from '..'
-import { MenuIcon, ChevronLeftIcon, UsersIcon } from '@heroicons/react/solid'
+import { UsersIcon } from '@heroicons/react/solid'
+import {
+  MenuIcon,
+  ChevronLeftIcon,
+  PlusIcon,
+  CameraIcon,
+  PhotographIcon,
+  EmojiHappyIcon,
+  MicrophoneIcon,
+} from '@heroicons/react/outline'
 import { useState } from 'react'
 import Image from 'next/image'
 
@@ -16,22 +25,22 @@ function Dialogue({ streamUrl, streamDate, clipUrl, characters, lines }) {
       {/* Display */}
       <div className="">
         {/* Option / Character Details / Stream Details */}
-        <div className="relative text-white flex justify-between items-center bg-sky-900 py-2 px-2 sm:py-3 sm:px-4 top-0 lg:rounded-t-xl">
+        <div className="relative text-white flex justify-between items-center bg-sky-900 px-2 sm:px-4 pb-2 pt-4 lg:pt-2 top-0 lg:rounded-t-xl">
           {/* Left */}
           <div>
-            <ChevronLeftIcon className="h-6 w-6 sm:h-8 sm:w-8" />
+            <ChevronLeftIcon className="h-8 w-8" />
           </div>
 
           {/* Center */}
           <div>
-            <UsersIcon className="h-6 w-6 sm:h-8 sm:w-8" />
+            <UsersIcon className="h-8 w-8" />
           </div>
 
           {/* Right */}
           <div className="flex items-center space-x-1 cursor-pointer">
-            <MenuIcon onClick={() => setSettingOpen(!settingOpen)} className="h-6 w-6 sm:h-8 sm:w-8" />
+            <MenuIcon onClick={() => setSettingOpen(!settingOpen)} className="h-8 w-8" />
             <div
-              className={`absolute top-12 sm:top-16 right-2 text-black flex flex-col items-end space-y-1 p-3 rounded-md opacity-95 bg-white z-50 ${
+              className={`absolute top-14 sm:top-16 right-2 text-black flex flex-col items-end space-y-1 p-3 rounded-md opacity-95 bg-white z-50 ${
                 !settingOpen && 'hidden'
               }`}
             >
@@ -64,7 +73,7 @@ function Dialogue({ streamUrl, streamDate, clipUrl, characters, lines }) {
 
         {/* Chat */}
         <div className="">
-          <div className="bg-sky-400 h-[calc(103vh-96px)] sm:h-[calc(103vh-128px)] lg:h-[70vh] overflow-scroll scrollbar-hide px-3 sm:px-6">
+          <div className="bg-sky-400 h-[calc(100vh-96px)] lg:h-[70vh] overflow-scroll scrollbar-hide px-3 sm:px-6">
             <div className="flex items-center mt-5">
               <p className="text-base sm:text-lg inline-block mx-auto text-center bg-blue-500 text-white p-2 sm:px-4 rounded-md">
                 {streamDate}
@@ -123,7 +132,23 @@ function Dialogue({ streamUrl, streamDate, clipUrl, characters, lines }) {
           </div>
         </div>
         {/* Decolation */}
-        <div className="bg-slate-600 h-12 sm:h-16 top-0 lg:rounded-b-xl"></div>
+        <div className="flex justify-between bg-slate-600 text-white top-0 px-2 sm:px-4 pt-2 pb-4 lg:pb-2 lg:rounded-b-xl">
+          {/* Left */}
+          <div className="flex space-x-1">
+            <PlusIcon className="h-8 w-8" />
+            <CameraIcon className="h-8 w-8" />
+            <PhotographIcon className="h-8 w-8" />
+          </div>
+
+          <div className="flex flex-grow items-center bg-gray-500 rounded-xl mx-2">
+            <p className="pl-4 text-gray-200">Aa</p>
+          </div>
+
+          {/* Right */}
+          <div>
+            <MicrophoneIcon className="h-8 w-8" />
+          </div>
+        </div>
       </div>
     </div>
   )
