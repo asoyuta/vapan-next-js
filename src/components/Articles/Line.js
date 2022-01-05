@@ -25,6 +25,7 @@ function Line({ name, person, iconUrl, nihongo, furigana, freeEN, description, s
             {name}
           </p>
         )}
+
         {/* Speech Bubble */}
         <div
           className={`flex flex-col items-center px-4 py-2 sm:py-4 rounded-xl ${isFirst ? 'bg-lime-300' : 'bg-white'} ${
