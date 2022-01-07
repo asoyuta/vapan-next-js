@@ -1,5 +1,5 @@
 import { useSession } from 'next-auth/react'
-import { Header, EditCharacters, EditDialogue, EditArticle } from '../../components'
+import { Header, EditArticle } from '../../components'
 
 function Edit() {
   const { data: session } = useSession()

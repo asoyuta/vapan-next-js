@@ -21,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div className=" bg-gray-100">
+    <div className="bg-gray-100">
       <Head>
         <title>vapan!</title>
       </Head>
@@ -30,9 +30,9 @@ export default function Home() {
 
       <div>
         <div className="flex justify-center">
-          <p onClick={createNewArticle} className="cursor-pointer bg-blue-500 p-3 m-3 rounded-xl text-white">
-            Create a new Article
-          </p>
+          <button disabled={!session} onClick={createNewArticle} className={`${session ? 'button' : 'disabledButton'}`}>
+            {session ? 'Create a new Article' : 'Sign in to create Articles'}
+          </button>
         </div>
       </div>
 
