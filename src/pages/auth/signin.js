@@ -6,11 +6,11 @@ function signIn({ providers }) {
     <div>
       <Header />
 
-      <div>
+      <div className='flex justify-center mt-10'>
         {Object.values(providers).map((provider) => (
           <div key={provider.name}>
             <button
-              className="p-3 bg-blue-500 rounded-lg text-white"
+              className="button"
               onClick={() => SignIntoProvider(provider.id, { callbackUrl: '/' })}
             >
               Sign in with {provider.name}

@@ -7,7 +7,6 @@ import { useState } from 'react'
 import { HeaderMenu } from '..'
 
 function Header() {
-  const { data: session } = useSession()
   const router = useRouter()
   const [openMenu, setOpenMenu] = useState(false)
 
@@ -27,7 +26,7 @@ function Header() {
         <div onClick={() => setOpenMenu(!openMenu)} className=" cursor-pointer">
           <MenuIcon className="h-6 w-6" />
         </div>
-        <HeaderMenu session={session} openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        <HeaderMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </div>
     </header>
   )

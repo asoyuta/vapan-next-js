@@ -1,13 +1,10 @@
 import { XCircleIcon, LoginIcon, LogoutIcon, UserIcon } from '@heroicons/react/outline'
-import { signIn, signOut } from 'next-auth/react'
+import { signIn, signOut, useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 
-function HeaderMenu({ session, openMenu, setOpenMenu }) {
+function HeaderMenu({ openMenu, setOpenMenu }) {
   const router = useRouter()
-
-  const handleClickProfile = () => {
-    
-  }
+  const { data: session } = useSession()
 
   return (
     <div
@@ -27,9 +24,19 @@ function HeaderMenu({ session, openMenu, setOpenMenu }) {
         </div>
         {session ? (
           <div className="flex flex-col spacey-1">
-            <div className="flex items-center space-x-4 cursor-pointer p-2 hover:bg-gray-200 rounded-md" onClick={handleClickProfile}>
+            <div
+              className="flex items-center space-x-4 cursor-pointer p-2 hover:bg-gray-200 rounded-md"
+              onClick={() => router.push(`/${session.user.id}`)}
+            >
               <UserIcon className="h-5 w-5" />
               <p>Profile</p>
+            </div>
+            <div
+              className="flex items-center space-x-4 cursor-pointer p-2 hover:bg-gray-200 rounded-md"
+              onClick={() => router.push(`/edit_dialogues/new`)}
+            >
+              <UserIcon className="h-5 w-5" />
+              <p>Create Dialogue</p>
             </div>
             <div
               className="flex items-center space-x-4 cursor-pointer p-2 hover:bg-gray-200 rounded-md"

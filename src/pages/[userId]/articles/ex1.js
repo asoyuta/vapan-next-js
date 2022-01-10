@@ -1,5 +1,4 @@
-import { Article, Header } from '../../components'
-import noIconUrl from '../../public/img/blank-profile.png'
+import { Article, Header } from '../../../components'
 
 const characters = [
   {

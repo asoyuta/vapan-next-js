@@ -3,7 +3,7 @@ import { Dialogue, GrayLine, Line, Title } from '..'
 
 function Article({ title, author, createDate, updateDate, contents }) {
   return (
-    <div className="max-w-5xl bg-white shadow-xl pt-6 sm:pt-14 lg:my-10">
+    <div className="max-w-5xl bg-white shadow-xl pt-6 sm:pt-14 my-5 lg:my-10">
       <Title title={title} author={author} createDate={createDate} />
 
       {contents.map((content, i) => {
