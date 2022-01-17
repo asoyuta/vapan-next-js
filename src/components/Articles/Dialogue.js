@@ -6,13 +6,12 @@ import {
   PlusIcon,
   CameraIcon,
   PhotographIcon,
-  EmojiHappyIcon,
   MicrophoneIcon,
 } from '@heroicons/react/outline'
 import { useState } from 'react'
 import Image from 'next/image'
 
-function Dialogue({ streamUrl, streamDate, clipUrl, characters, lines }) {
+function Dialogue({ streamDate, characters, lines }) {
   const [firstPersonId, setFirstPersonId] = useState(0)
   const [settingOpen, setSettingOpen] = useState(false)
   const [furiOn, setFuriOn] = useState(true)
