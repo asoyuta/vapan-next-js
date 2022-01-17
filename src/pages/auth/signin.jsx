@@ -6,13 +6,10 @@ function signIn({ providers }) {
     <div>
       <Header />
 
-      <div className='flex justify-center mt-10'>
+      <div className="flex justify-center mt-10">
         {Object.values(providers).map((provider) => (
           <div key={provider.name}>
-            <button
-              className="button"
-              onClick={() => SignIntoProvider(provider.id, { callbackUrl: '/' })}
-            >
+            <button className="button" onClick={() => SignIntoProvider(provider.id, { callbackUrl: '/' })}>
               Sign in with {provider.name}
             </button>
           </div>
@@ -24,7 +21,7 @@ function signIn({ providers }) {
 
 export default signIn
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps() {
   const providers = await getProviders()
 
   return {

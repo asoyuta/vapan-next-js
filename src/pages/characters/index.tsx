@@ -20,7 +20,7 @@ function AllCharacters({ allCharacters }: Data) {
 
   useEffect(() => {
     dispatch(setAllCharacters(allCharacters))
-  }, [])
+  }, [allCharacters, dispatch])
 
   return (
     <div className="bg-gray-100">

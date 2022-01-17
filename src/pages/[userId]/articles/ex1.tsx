@@ -202,14 +202,14 @@ const article = {
 }
 
 function Read() {
-  const { title, author, createDate, updateDate, contents } = article
+  const { title, author, createDate, contents } = article
 
   return (
     <div className="bg-gray-100">
       <Header />
 
       <main className="flex justify-center">
-        <Article title={title} author={author} createDate={createDate} updateDate={updateDate} contents={contents} />
+        {/* <Article title={title} author={author} createDate={createDate} contents={contents} /> */}
       </main>
     </div>
   )

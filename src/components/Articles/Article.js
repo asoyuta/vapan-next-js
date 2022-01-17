@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { Dialogue, GrayLine, Line, Title } from '..'
+import React from 'react'
+import { Dialogue, Title } from '..'
 
-function Article({ title, author, createDate, updateDate, contents }) {
+function Article({ title, author, createDate, contents }) {
   return (
     <div className="max-w-5xl bg-white shadow-xl pt-6 sm:pt-14 my-5 lg:my-10">
       <Title title={title} author={author} createDate={createDate} />
@@ -23,17 +23,18 @@ function Article({ title, author, createDate, updateDate, contents }) {
             )
 
           case 'dialogue':
-            const { streamUrl, streamDate, clipUrl, characters, lines } = content.dialogue
+            // const { streamUrl, streamDate, clipUrl, characters, lines } = content.dialogue
 
             return (
-              <Dialogue
-                key={i}
-                streamUrl={streamUrl}
-                streamDate={streamDate}
-                clipUrl={clipUrl}
-                characters={characters}
-                lines={lines}
-              />
+              <></>
+              // <Dialogue
+              //   key={i}
+              //   streamUrl={streamUrl}
+              //   streamDate={streamDate}
+              //   clipUrl={clipUrl}
+              //   characters={characters}
+              //   lines={lines}
+              // />
             )
         }
       })}

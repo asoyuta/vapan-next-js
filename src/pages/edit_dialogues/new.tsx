@@ -1,9 +1,8 @@
 import { GetServerSideProps } from 'next'
-import { useEffect, useRef, useState } from 'react'
-import { CharacterCard, Dialogue, Header } from '../../components'
+import { useEffect, useRef } from 'react'
+import { Header } from '../../components'
 import ChooseCharacters from '../../components/Characters/ChooseCharacters'
 import admin from '../../firebase/nodeApp'
-import noIcon from '../../public/img/blank-profile.png'
 import { useAppDispatch } from '../../redux/app/hooks'
 import { setAllCharacters } from '../../redux/character/characterSlice'
 import { Character } from '../../types'
@@ -19,7 +18,7 @@ function EditNewDialogue({ allCharacters }: Data) {
 
   useEffect(() => {
     dispatch(setAllCharacters(allCharacters))
-  }, [allCharacters])
+  }, [allCharacters, dispatch])
 
   return (
     <div className="bg-gray-100">
